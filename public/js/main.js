@@ -146,7 +146,15 @@ $(document).ready(function(){
 
 })(jQuery);
 
-jQuery.validator.addMethod("cnpj", function(cnpj, element) {
+jQuery.validator.addMethod("cnpj", function(str, element) {
+	str = str.replace('.','');
+	str = str.replace('.','');
+	str = str.replace('.','');
+	str = str.replace('-','');
+	str = str.replace('/','');
+	str = str.replace('-','');
+	cnpj = str;
+
 
 	var numeros, digitos, soma, resultado, pos, tamanho,
 		digitos_iguais = true;
