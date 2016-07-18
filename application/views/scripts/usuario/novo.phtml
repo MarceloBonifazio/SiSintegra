@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <title>SiSintegra - Registrar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='../css/bootstrap.min.css' >
+   	<link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link href="./css" rel="stylesheet" type="text/css">
+<script src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div class="text-center" style="padding:50px 0">
+	<div class="logo">Registrar SiSintegra</div>
+	<div class="login-form-1">
+		<form id="register-form" class="text-left" novalidate="novalidate" method="post">
+			<div class="login-form-main-message"></div>
+			<div class="main-login-form">
+				<div class="login-group">
+					<div class="form-group">
+						<label for="reg_nome" class="sr-only">Nome do Usuário</label>
+						<input type="text" class="form-control" id="reg_nome" name="reg_nome" placeholder="Nome">
+					</div>
+					<div class="form-group">
+						<label for="reg_senha" class="sr-only">Senha</label>
+						<input type="password" class="form-control" id="reg_senha" name="reg_senha" placeholder="Senha">
+					</div>
+					<div class="form-group">
+						<label for="reg_senha_confirm" class="sr-only">Confirme sua senha</label>
+						<input type="password" class="form-control" id="reg_senha_confirm" name="reg_senha_confirm" placeholder="Confirme sua senha">
+					</div>					
+				</div>
+				<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+			</div>
+			<div class="etc-login-form">
+				<p>Já possui uma conta? <a href="<?php echo $this->url(array('controller' => 'Index','action' => 'index')); ?>"> Entre aqui</a></p>
+			</div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="../js/main.js"></script>
+</body></html>
